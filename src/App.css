@@ -47,6 +47,26 @@
 .header_content_register {
   color: white;
 }
-.navbar_content_films {
-  color: white;
+
+/* HEADER CSS FİNİSH*/
+
+/* NAVBAR CSS */
+.navbar_content {
+  display: flex;
+  flex-direction: column;
 }
+.navbar_content ul {
+  display: flex;
+  background-color: black;
+}
+
+.navbar_content_films {
+  display: flex;
+  padding: 10px 40px 11px 25px;
+}
+.navbar_content_films_film {
+  color: white;
+  margin-left: 20px;
+}
+
+/* NAVBAR CSS FİNSİH */
