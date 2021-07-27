@@ -1,11 +1,16 @@
+// import React, { useState } from "react";
 import React, { useState } from "react";
 
 function Navbar() {
+  //   const [isOpen, setOpen] = useState(false);
   const [isOpen, setOpen] = useState(false);
-
   const onClickFunction = () => {
     setOpen(!isOpen);
   };
+
+  //   const onClickFunction = () => {
+  //     setOpen(!isOpen);
+  //   };
   let filmLinks = [
     "Arşiv",
     "Film Türleri",
@@ -44,6 +49,7 @@ function Navbar() {
           {filmLinks.map((film, index) => (
             <a
               href="#"
+              //   onClick={index == 1 && onClickFunction}
               onClick={index == 1 && onClickFunction}
               className="navbar_content_films_film"
             >

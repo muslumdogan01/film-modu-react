@@ -1,72 +1,46 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: none;
-  outline: none;
-  list-style-type: none;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
-/* HEADER CSS */
-
-.container {
-  width: 1300px;
-  height: 100vh;
+.App {
+  width: 400px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  background-color: black;
+  font-family: sans-serif;
+  text-align: center;
 }
-.header_content {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+
+.ekleme_formu input,
+.ekleme_formu button,
+.temizle {
+  padding: 5px;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
 }
-.header_content_left {
-  display: flex;
-  padding: 20px 25px 0 25px;
+
+.ekleme_formu input {
+  background: #e1e1e2;
 }
-.content_left_search {
-  width: 350px;
-  background-color: rgb(92, 92, 92);
-  color: white;
-  margin-left: 20px;
-  padding-left: 10px;
-}
-.header_content_username {
-  display: flex;
-  width: 180px;
-  justify-content: space-between;
-  padding: 20px 25px 0 0;
-  color: white;
-}
-.header_content_login {
-  color: white;
-}
-.header_content_register {
+
+.ekleme_formu button,
+.temizle {
+  background: #333;
   color: white;
 }
 
-/* HEADER CSS FİNİSH*/
-
-/* NAVBAR CSS */
-.navbar_content {
-  display: flex;
-  flex-direction: column;
-}
-.navbar_content ul {
-  display: flex;
-  background-color: black;
+.liste {
+  padding: 20px 0;
 }
 
-.navbar_content_films {
-  display: flex;
-  padding: 10px 40px 11px 25px;
-}
-.navbar_content_films_film {
-  color: white;
-  margin-left: 20px;
+.liste > div {
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
 }
 
-/* NAVBAR CSS FİNSİH */
+.liste > div:last-child {
+  border-bottom: 0;
+}
+
+.yapildi {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+.yapilmadi {
+  cursor: pointer;
+}
