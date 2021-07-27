@@ -22,7 +22,7 @@ export default function App() {
     setListe(
       liste.map((el) =>
         //üzerine tıkladığımız divin id sine eşitse / ..el objesini tekrar döndürüp,
-        // tamamlandı değerine(yani true,false) !el.tamamlandının tersini verdik
+        // tamamlandı değerine(yani true,false) !el.tamamlandının tersini verdik.
         el.id === itemId ? { ...el, tamamlandi: !el.tamamlandi } : el
       )
     );
@@ -62,8 +62,6 @@ export default function App() {
     </div>
   );
 }
-
-
 
 // const başlangıçDurumu = {
 //   yapılacaklar: [
